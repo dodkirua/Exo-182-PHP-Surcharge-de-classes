@@ -44,4 +44,8 @@ class Personnage {
     public function getNom() {
         return $this->nom;
     }
+
+    public function __toString() : string {
+        return $this->getNom()." avec ".$this->vie." points de vie et à la position :".$this->x." , ".$this->y;
+    }
 } 
